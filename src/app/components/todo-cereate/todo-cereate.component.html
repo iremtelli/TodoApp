@@ -1,0 +1,32 @@
+<mat-card class="p-6 bg-white shadow rounded-lg">
+  <h2 class="text-lg font-semibold mb-4 text-slate-700">Yeni Görev Ekle</h2>
+  <form class="flex flex-col gap-4">
+    <mat-form-field appearance="fill">
+      <mat-label>Başlık</mat-label>
+      <input matInput placeholder="Örn: Angular öğren">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Açıklama</mat-label>
+      <textarea matInput rows="3" placeholder="Detaylı bilgi..."></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Son Tarih</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Öncelik</mat-label>
+      <mat-select>
+        <mat-option value="low">Düşük</mat-option>
+        <mat-option value="medium">Orta</mat-option>
+        <mat-option value="high">Yüksek</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="self-end">Ekle</button>
+  </form>
+</mat-card>

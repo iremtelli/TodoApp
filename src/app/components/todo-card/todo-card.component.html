@@ -1,0 +1,26 @@
+<mat-card class="p-4 shadow-sm border-l-4 border-indigo-500 bg-slate-50 rounded-md">
+  <div class="flex justify-between">
+    <div>
+      <h3 class="text-lg font-semibold text-slate-800">
+<!--        <span-->
+<!--        class="ml-2 text-xs font-semibold px-2 py-0.5 rounded-full"-->
+<!--        [ngClass]="{-->
+<!--    'bg-green-100 text-green-700': todo.priority === 'low',-->
+<!--    'bg-yellow-100 text-yellow-800': todo.priority === 'medium',-->
+<!--    'bg-red-100 text-red-700': todo.priority === 'high'-->
+<!--  }"-->
+<!--      >-->
+<!--  {{ todo.priority | titlecase }}-->
+<!--</span>-->
+        Görev Başlığı</h3>
+      <p class="text-sm text-slate-600">Açıklama metni burada yer alır...</p>
+      <p class="text-xs text-gray-500 italic">Son Tarih: 2025-05-01</p>
+    </div>
+    <div class="flex flex-col items-end gap-2">
+      <mat-checkbox color="accent"></mat-checkbox>
+      <button mat-icon-button color="warn" class="hover:text-red-700">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-card>
